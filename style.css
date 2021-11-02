@@ -301,6 +301,7 @@ body{
 
 .booking__form__button{
     height: 60px;
+    width: 620px;
     border-radius: 5px;
     background-color: rgba(232, 195, 0, 1);
     font-size: 12px;
@@ -311,6 +312,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.booking__form__button:hover{
+    background-color: rgb(216, 180, 0);
 }
 
 .booking__photo{
@@ -326,6 +331,15 @@ body{
 .booking__photo-decor{
     position: absolute;
     right: -160px;
+}
+
+.booking__show-button{
+    height: 50px;
+    width: 120px;    
+}
+
+.booking__table{
+    padding: 50px;
 }
 
 .booking__timetable{

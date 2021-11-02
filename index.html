@@ -136,24 +136,24 @@
     <section class="booking">
         <div class="container">
             <div class="booking__inner">
-                <form class="booking__form">
+                <form class="booking__form" id="form">
                     <div class="booking__form-title title">
                         <p>book a table</p>
                         <div class="title-decor"></div>
                     </div>
                     <div class="booking__form-items">
-                        <input class="booking__form-name booking__form-item" type="text" placeholder="Name">
-                        <input class="booking__form-email booking__form-item" type="text" placeholder="Email">
+                        <input class="booking__form-name booking__form-item" id="nameInput" type="text" placeholder="Name">
+                        <input class="booking__form-email booking__form-item" id="emailInput" type="text" placeholder="Email">
                     </div>
                     <div class="booking__form-items">
-                        <input class="booking__form-phone booking__form-item" type="text" placeholder="Phone">
-                        <input class="booking__form-people booking__form-item" type="text" placeholder="People">
+                        <input class="booking__form-phone booking__form-item" id="phoneInput" type="text" placeholder="Phone">
+                        <input class="booking__form-people booking__form-item" id="peopleInput" type="text" placeholder="People">
                     </div>
                     <div class="booking__form-items">
-                        <input class="booking__form-date booking__form-item" type="text" placeholder="Date(mm/dd)">
-                        <input class="booking__form-time booking__form-item" type="text" placeholder="Time">
+                        <input class="booking__form-date booking__form-item" id="dateInput" type="text" placeholder="Date(mm/dd)">
+                        <input class="booking__form-time booking__form-item" id="timeInput" type="text" placeholder="Time">
                     </div>
-                    <div class="booking__form__button">BOOK NOW</div>
+                    <div><input type="button" value="BOOK NOW" class="booking__form__button" onclick="bookNow()"></div>
                 </form>
                 <div class="booking__photo">
                     <div class="photo">
@@ -162,6 +162,8 @@
                     </div>
                 </div>
             </div>
+            <div><input class="booking__show-button" type="button" value="Show table" onclick="showBooking()"></div>
+            <div class="booking__table" id="table" hidden></div>
             <div class="booking__timetable">
                 <p><span>Mon - Fri:</span> 8PM - 10PM, <span>Sat - Sun:</span> 8PM - 3AM, <span>Phone:</span> +40 729
                     131 637/+40 726 458 782</p>
@@ -456,6 +458,8 @@
             <p>© Copyright <span> Mindblister </span> 2019</p>   
         </div>
     </section>
+
+    <script src="F:\WEB\Hungry\script.js"></script>
 </body>
 
 </html>
